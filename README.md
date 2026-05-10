@@ -63,4 +63,4 @@ Portafolio-matiuDev/
 ¿Tienes un proyecto en mente o quieres ponerte en contacto?
 
 - 🌐 [matiudev.vercel.app](https://matiudev.vercel.app/)
-- 📧 matiiasalberto.22@gmail.com ← reemplaza con tu email
+- 📧 matiiasalberto.22@gmail.com
