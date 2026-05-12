@@ -1,16 +1,17 @@
-import { Link, Star } from "lucide-react";
+import { Github, Link, Star } from "lucide-react";
 import { Link as RouterLink } from "react-router-dom";
-import pizzeria from "../assets/pizzeria.png";
 import specterGym from "../assets/specterGym.png";
-import pelisdev from "../assets/pelisdev.png";
 import cashflow from "../assets/cashflow.png";
-import { FaCss3, FaJs, FaHtml5, FaPaw } from "react-icons/fa";
+import mi_negocio from "../assets/mi-negocio.png";
+import skillia from "../assets/skillia.png";
+import { FaCss3, FaJs, FaHtml5, FaPaw, FaMobileAlt } from "react-icons/fa";
 import {
   RiSupabaseFill,
   RiTailwindCssFill,
   RiReactjsLine,
 } from "react-icons/ri";
 import React from "react";
+import { SiVite } from "react-icons/si";
 
 const proyectos = [
   {
@@ -18,39 +19,41 @@ const proyectos = [
     descripcion:
       "Aplicacion Movil de finanzas personales te permite gestionar tus cuentas de manera sencilla y eficiente. Con opciones para añadir ingresos, gastos, transferencias, y categorizar tus movimientos, tendrás una visión clara de tus finanzas. Además, incluye gráficos intuitivos para analizar tus hábitos financieros y un registro detallado para un seguimiento completo.",
     web: "",
-    lenguajes: ["React_Native", "Tailwind", "Zustand", "Supabase"],
+    lenguajes: ["React_Native", "Tailwind", "Zustand", "Supabase", "Expo"],
     image: cashflow,
   },
   {
-    nombre: "Pizzeria Ociia",
+    nombre: "Mi Negocio",
     descripcion:
-      "Aplicación web de una pizzería desarrollada con JavaScript puro, que ofrece una experiencia interactiva para explorar el menú, realizar pedidos y rastrear su estado.",
-    web: "PizzeriaOciia",
-    lenguajes: ["HTML", "CSS", "JavaScript"],
-    image: pizzeria,
+      "Aplicación móvil para gestionar tu negocio de forma sencilla y eficiente. Permite registrar ventas vinculando clientes y productos, controlar pagos pendientes, administrar tu catálogo y cartera de clientes, y analizar el rendimiento con gráficos de ventas y rankings. Todo el historial se guarda localmente en el dispositivo, sin necesidad de internet.",
+    web: "",
+    repo: "https://github.com/matiudev/Mi-Negocio",
+    lenguajes: ["React_Native", "Tailwind", "Zustand", "Expo"],
+    image: mi_negocio,
+  },
+  {
+    nombre: "Skillia",
+    descripcion:
+      "Plataforma web de aprendizaje online. Permite explorar un catálogo de cursos premium, registrarse y gestionar el progreso desde un dashboard personalizado. Ofrece acceso ilimitado al contenido y certificados al finalizar cada trayecto. Todo el contenido se gestiona en la nube mediante Supabase.",
+    web: "",
+    repo: "https://skillia-weld.vercel.app/",
+    lenguajes: ["React", "Tailwind", "Zustand", "Supabase", "Vite"],
+    image: skillia,
   },
   {
     nombre: "Specter GYM",
     descripcion:
       "Aplicación web de un gym desarrollada con React, que ofrece una experiencia interactiva para poder reservar tu visita a la hora de matricularte.",
     web: "SpecterGym",
-    lenguajes: ["React", "Tailwind"],
+    lenguajes: ["React", "Tailwind", "Vite"],
     image: specterGym,
-  },
-  {
-    nombre: "PelisDev",
-    descripcion:
-      "Este proyecto es un catálogo interactivo de películas y series desarrollado con HTML, CSS y JavaScript. Permite explorar diferentes categorías como películas, series y tendencias, con una interfaz responsive y animaciones dinámicas.",
-    web: "PelisDev",
-    lenguajes: ["HTML", "CSS", "JavaScript"],
-    image: pelisdev,
   },
 ];
 
 const ICONS = {
   JavaScript: {
     icon: () => <FaJs className="text-yellow-400" />,
-    bg: "bg-yellow-400/20", // fondo suave
+    bg: "bg-yellow-400/20",
   },
   HTML: {
     icon: () => <FaHtml5 className="text-orange-500" />,
@@ -80,6 +83,14 @@ const ICONS = {
     icon: () => <FaPaw className="text-orange-500" />,
     bg: "bg-orange-500/20",
   },
+  Vite: {
+    icon: () => <SiVite className="text-purple-500" />,
+    bg: "bg-purple-500/20",
+  },
+  Expo: {
+    icon: () => <FaMobileAlt className="text-slate-400" />,
+    bg: "bg-slate-400/20",
+  },
 };
 
 const IconsLenguajes = ({ lenguajes }) => {
@@ -94,13 +105,13 @@ const IconsLenguajes = ({ lenguajes }) => {
         const Icon = data.icon;
 
         return (
-            <div
-              key={lang}
-              className={`${data.bg} py-3 px-4 md:flex items-center gap-3 rounded-xl mb-5`}
-            >
-              <Icon />
-              <p className="font-semibold">{lang.replace("_", " ")}</p>
-            </div>
+          <div
+            key={lang}
+            className={`${data.bg} py-3 px-4 md:flex items-center gap-3 rounded-xl mb-5`}
+          >
+            <Icon />
+            <p className="font-semibold">{lang.replace("_", " ")}</p>
+          </div>
         );
       })}
     </div>
@@ -118,18 +129,29 @@ function Proyectos() {
       {proyectos.map((proyecto) => (
         <React.Fragment key={proyecto.nombre}>
           <div className="flex justify-between mb-5">
-            <p className="font-black text-3xl font-poetsen text-pink-300">
+            <p className="font-black text-3xl font-poetsen text-gray-200">
               {proyecto.nombre}
             </p>
-            {proyecto.web && (
-              <RouterLink
-                to={proyecto.web}
-                className="bg-white py-2 px-5 flex items-center gap-1 rounded-xl"
-              >
-                <Link color="black" size={18} />
-                <p className="text-black text-base font-semibold">Web</p>
-              </RouterLink>
-            )}
+            <div className="flex gap-3">
+              {proyecto.web && (
+                <RouterLink
+                  to={proyecto.web}
+                  className="bg-white py-2 px-5 flex items-center gap-1 rounded-xl"
+                >
+                  <Link color="black" size={18} />
+                  <p className="text-black text-base font-semibold">Web</p>
+                </RouterLink>
+              )}
+              {proyecto.repo && (
+                <RouterLink
+                  to={proyecto.repo}
+                  className="bg-white py-2 px-5 flex items-center gap-1 rounded-xl"
+                >
+                  <Github color="black" size={18} />
+                  <p className="text-black text-base font-semibold">Repo</p>
+                </RouterLink>
+              )}
+            </div>
           </div>
           <p className="text-gray-300 font-semibold text-start mb-3">
             {proyecto.descripcion}

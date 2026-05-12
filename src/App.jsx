@@ -1,7 +1,5 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Portafolio from "./pages/Portafolio";
-import PelisDevPage from "./pages/PelisDev/PelisDevPage";
-import PizzeriaPage from "./pages/PizzeriaOciia/PizzeriaPage";
 import SpecterGymPage from "./pages/SpecterGym/SpecterGymPage";
 import { useEffect } from "react";
 
@@ -26,9 +24,7 @@ function App() {
       <div className="w-full justify-center sm:px-6 lg:px-0">
         <Routes>
           <Route path="/" element={<Portafolio />} />
-          <Route path="/PizzeriaOciia" element={<PizzeriaPage />} />
           <Route path="/SpecterGym" element={<SpecterGymPage />} />
-          <Route path="/PelisDev" element={<PelisDevPage />} />
         </Routes>
       </div>
     </BrowserRouter>
