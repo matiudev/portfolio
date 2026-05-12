@@ -1,4 +1,4 @@
-# 👋 Portafolio — matiuDev
+# Portafolio — matiuDev
 
 Bienvenido a mi portafolio de desarrollo. Aquí encontrarás el código fuente de mi sitio personal y los proyectos web y móviles que he construido.
 
@@ -12,50 +12,40 @@ Bienvenido a mi portafolio de desarrollo. Aquí encontrarás el código fuente d
 - React
 - Tailwind CSS
 - Zustand
+- Supabase
 
 **Mobile**
 - React Native / Expo
-- NativeWind
+- Tailwind CSS (NativeWind)
 - Zustand
+- Supabase
 
 ---
 
 ## 🚀 Proyectos destacados
 
 ### 📱 CashFlow
-App móvil de finanzas personales para registrar y controlar ingresos y gastos.
-Desarrollada con **React Native**, **Expo 53**, **NativeWind** y **Zustand**.
+App móvil de finanzas personales para registrar y controlar ingresos y gastos. Incluye gráficos para analizar hábitos financieros y registro detallado de movimientos.
+Desarrollada con **React Native**, **Expo**, **Tailwind CSS**, **Zustand** y **Supabase**.
 
 ---
 
-### 🍕 Pizzería Ociia
-Aplicación web para una pizzería con experiencia interactiva para explorar el menú, gestionar el carrito de compras y rastrear el estado del pedido.
-Desarrollada con **React** y **Tailwind CSS**.
+### 🏪 Mi Negocio
+App móvil para gestionar un negocio de forma sencilla. Permite registrar ventas vinculando clientes y productos, controlar pagos pendientes, administrar el catálogo y analizar el rendimiento con gráficos. Todo el historial se guarda localmente en el dispositivo.
+Desarrollada con **React Native**, **Expo**, **Tailwind CSS** y **Zustand**.
+
+---
+
+### 🎓 Skillia
+Plataforma web de aprendizaje online. Permite explorar un catálogo de cursos premium, registrarse y gestionar el progreso desde un dashboard personalizado, con certificados al finalizar cada trayecto.
+Desarrollada con **React**, **Tailwind CSS**, **Zustand**, **Supabase** y **Vite**.
 
 ---
 
 ### 🏋️ Specter GYM
 Aplicación web para un gimnasio que permite reservar visitas y gestionar la matrícula de forma interactiva.
-Desarrollada con **React** y **Tailwind CSS**.
+Desarrollada con **React**, **Tailwind CSS** y **Vite**.
 
----
-
-### 🎬 PelisDev
-Catálogo interactivo de películas y series con exploración por categorías (películas, series y tendencias), interfaz responsive, animaciones dinámicas y consumo de API externa.
-Desarrollada con **React** y **Tailwind CSS**.
-
----
-
-## 📂 Estructura del repositorio
-
-```
-Portafolio-matiuDev/
-├── portafolio/       # Código fuente del sitio personal
-├── cashflow/         # App móvil de finanzas
-├── pizzeria-ociia/   # Web de pizzería
-├── specter-gym/      # Web de gimnasio
-└── pelisdev/         # Catálogo de películas
-```
 ---
 
 ## 📬 Contacto
