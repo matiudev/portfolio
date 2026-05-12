@@ -35,8 +35,8 @@ const proyectos = [
     nombre: "Skillia",
     descripcion:
       "Plataforma web de aprendizaje online. Permite explorar un catálogo de cursos premium, registrarse y gestionar el progreso desde un dashboard personalizado. Ofrece acceso ilimitado al contenido y certificados al finalizar cada trayecto. Todo el contenido se gestiona en la nube mediante Supabase.",
-    web: "",
-    repo: "https://skillia-weld.vercel.app/",
+    web: "https://skillia-weld.vercel.app/",
+    repo: "https://github.com/matiudev/Skillia",
     lenguajes: ["React", "Tailwind", "Zustand", "Supabase", "Vite"],
     image: skillia,
   },
