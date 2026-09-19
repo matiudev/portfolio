@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Portafolio from "./pages/Portafolio";
-import SpecterGymPage from "./pages/SpecterGym/SpecterGymPage";
 import { useEffect } from "react";
 
 function ScrollToTop() {
@@ -24,7 +23,6 @@ function App() {
       <div className="w-full justify-center sm:px-6 lg:px-0">
         <Routes>
           <Route path="/" element={<Portafolio />} />
-          <Route path="/SpecterGym" element={<SpecterGymPage />} />
         </Routes>
       </div>
     </BrowserRouter>

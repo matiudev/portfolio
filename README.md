@@ -42,12 +42,6 @@ Desarrollada con **React**, **Tailwind CSS**, **Zustand**, **Supabase** y **Vite
 
 ---
 
-### 🏋️ Specter GYM
-Aplicación web para un gimnasio que permite reservar visitas y gestionar la matrícula de forma interactiva.
-Desarrollada con **React**, **Tailwind CSS** y **Vite**.
-
----
-
 ## 📬 Contacto
 
 ¿Tienes un proyecto en mente o quieres ponerte en contacto?

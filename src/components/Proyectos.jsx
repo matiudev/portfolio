@@ -1,6 +1,5 @@
 import { Github, Link, Star } from "lucide-react";
 import { Link as RouterLink } from "react-router-dom";
-import specterGym from "../assets/specterGym.png";
 import cashflow from "../assets/cashflow.png";
 import mi_negocio from "../assets/mi-negocio.png";
 import skillia from "../assets/skillia.png";
@@ -39,14 +38,6 @@ const proyectos = [
     repo: "https://github.com/matiudev/Skillia",
     lenguajes: ["React", "Tailwind", "Zustand", "Supabase", "Vite"],
     image: skillia,
-  },
-  {
-    nombre: "Specter GYM",
-    descripcion:
-      "Aplicación web de un gym desarrollada con React, que ofrece una experiencia interactiva para poder reservar tu visita a la hora de matricularte.",
-    web: "SpecterGym",
-    lenguajes: ["React", "Tailwind", "Vite"],
-    image: specterGym,
   },
 ];
 
