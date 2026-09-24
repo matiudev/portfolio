@@ -17,7 +17,7 @@ const proyectos = [
     nombre: "CashFlow",
     descripcion:
       "Aplicacion Movil de finanzas personales te permite gestionar tus cuentas de manera sencilla y eficiente. Con opciones para añadir ingresos, gastos, transferencias, y categorizar tus movimientos, tendrás una visión clara de tus finanzas. Además, incluye gráficos intuitivos para analizar tus hábitos financieros y un registro detallado para un seguimiento completo.",
-    web: "",
+    web: "https://ccashflow.vercel.app/",
     lenguajes: ["React_Native", "Tailwind", "Zustand", "Supabase", "Expo"],
     image: cashflow,
   },
@@ -25,7 +25,7 @@ const proyectos = [
     nombre: "Mi Negocio",
     descripcion:
       "Aplicación móvil para gestionar tu negocio de forma sencilla y eficiente. Permite registrar ventas vinculando clientes y productos, controlar pagos pendientes, administrar tu catálogo y cartera de clientes, y analizar el rendimiento con gráficos de ventas y rankings. Todo el historial se guarda localmente en el dispositivo, sin necesidad de internet.",
-    web: "",
+    web: "https://minegociio.vercel.app/",
     repo: "https://github.com/matiudev/Mi-Negocio",
     lenguajes: ["React_Native", "Tailwind", "Zustand", "Expo"],
     image: mi_negocio,
